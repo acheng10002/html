@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="css/style.css">    
+    </head>
+    <body>
+        <!-- contents of the box are "One" and "Two" -->
+        <!-- if nothing else is done, the contents fill up the whole space of the box -->
+        <!-- box will be no bigger than the content -->
+        <h2 class="box-one">One</h2>
+        <h2 class="box-two">Two</h2>
+        <h2 class="box-three">Three</h2>
+        <!-- paragraph with outer display type of block; it starts on a new line and extends the entire length -->
+        <p>I am a paragraph. A short one.</p>
+        <!-- list laid out using display: flex -->
+        <!-- list itself is a block box nad breaks onto a new line -->
+        <ul>
+            <!-- children of the container are flex items; they have the flex layout -->
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
+        <!-- block-level paragraph with two span elements -->
+        <p>
+            <!-- span element with a class of "block" gets set to display "block" -->
+            I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span element</span>.
+        </p>
+        <br>
+        <br>
+        <p class="inlinespan">
+            I am a paragraph. Some of the
+            <!-- span elements are inline by default so no line break -->
+            <span class="spaninline">words</span> have been wrapped in a
+            <span class="spaninline">span element</span>.
+        </p>
+        <!-- inline box with flex items -->     
+        <ul class="inlineflex">
+          <li class="flexitems">Item One</li>
+          <li class="flexitems">Item Two</li>
+          <li class="flexitems">Item Three</li>
+        </ul>
+        <!-- both paragraphs are set to display: inline -->
+        <p class="inline">I am a paragraph. A short one.</p>
+        <p class="inline">I am another paragraph. Also a short one.</p>
+
+        <div class="box">I use the standard box model.</div>
+        <div class="box alternate">I use the alternate box model.</div>
+        <br>
+        <br>
+        <div class="margincontainer">
+        <div class="marginbox">Change my margin.</div>
+        </div>
+        <br>
+        <br>
+        <div class="bordercontainer">
+            <div class="borderbox">Change my borders.</div>
+        </div>
+        <br>
+        <br>
+        <div class="paddingcontainer">
+            <div class="paddingbox">Change my padding.</div>
+        </div> 
+        <br>
+        <br>
+        <!-- display: inline-block --> 
+        <p>
+            I am a paragraph and this is a <span class="inlineblock">span</span> inside that paragraph. A span is an inline element and so does not respect width and height.
+        </p>
+        <br>
+        <br>
+        <!-- nav bar is displayed in a row using a flexbox; links are the flex items -->
+        <nav>
+            <ul class="links-list">
+             <!-- display: inline-block on <a> makes it easier for a user to click the link -->
+             <!-- padding on the <a> and background color of it will change when <a> is hovered -->
+              <li><a href="">Link one</a></li>
+              <li><a href="">Link two</a></li>
+              <li><a href="">Link three</a></li>
+            </ul>
+        </nav>   
+        <br>
+        <br> 
+    </body>
+</html>
